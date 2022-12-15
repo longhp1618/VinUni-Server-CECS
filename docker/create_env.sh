@@ -93,7 +93,7 @@ docker run --init --restart=always --name $newname \
     -v ~/vinuni/user/$username:/home/ubuntu/$username \
     -v ~/vinuni/shared:/home/ubuntu/shared \
     -v ~/vinuni/data:/home/ubuntu/data:ro \
-    -p $port:22 -itd ubuntu_base:20.04
+    -p $port:22 -itd ubuntu_cecs:20.04
 
 # copy authorized keys inside container
 docker cp ~/.ssh/user/$username/authorized_keys $username:/home/ubuntu/.ssh/authorized_keys 
