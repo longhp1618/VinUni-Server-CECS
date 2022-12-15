@@ -48,6 +48,7 @@ Host cecs
 **Note**: PM me to get your own *port*.
 
 # Connect
+After finishing [tailscale-setup](https://github.com/longhoangphi225/VinUni-Server-CECS/tree/main/Tailscale-setup), you can ssh to cecs server
 ```bash
 ssh cecs
 ```
