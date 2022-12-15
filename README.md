@@ -2,7 +2,7 @@
 ## Build an image
 ```bash
 cd docker/image
-docker build -t ubuntu:v22.04 .
+docker build -t ubuntu_cecs:20.04 .
 ```
 
 ## Create a container
@@ -19,7 +19,7 @@ make # re-compile
 
 watch -n1 ./smi # normal mode
 watch -n1 -c ./smi -c # colorize texts
-watch -n1 -c ./msi -cd # above && get docker container name of each pid
+watch -n1 -c ./smi -cd # above && get docker container name of each pid
 ```
 
 Expected output:
