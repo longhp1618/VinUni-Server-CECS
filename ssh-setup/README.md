@@ -36,8 +36,8 @@ echo >> $HOME/.ssh/config
 
 Copy and paste this block
 ```
-Host server
-    HostName 18.141.200.25
+Host cecs
+    HostName 100.77.172.118
     User ubuntu
     Port [port]
 ```
@@ -47,14 +47,11 @@ Host server
 
 # Connect
 ```
-ssh server
+ssh cecs
 ```
 
 # Your environment
-* Ubuntu 22.04 LTS
+* Ubuntu 20.04
 * Miniconda3
-* PyTorch 1.11.0 with Python3.10 (CUDA 11.3)
-* TensorFlow 2.9.0 with Python3.10 (CUDA 11.2)
 
-<img width="778" alt="image" src="https://user-images.githubusercontent.com/22287261/182228503-99648330-4c3a-45f2-8ee3-ef7b484ff3e7.png">
 
