@@ -22,7 +22,7 @@ cat ~/.ssh/id_ed25519.pub
 ```
 cat $HOME/.ssh/id_ed25519.pub
 ```
-<img width="790" alt="image" src="https://user-images.githubusercontent.com/22287261/173214118-26bde204-f48b-4cc4-8928-0f5ba25bcd7d.png">
+<img width="790" alt="image" src="https://github.com/longhoangphi225/VinUni-Server-CECS/blob/main/.github/images/22287261/173214118-26bde204-f48b-4cc4-8928-0f5ba25bcd7d.png">
 
 # Create config file
 * On Linux/macOS, open terminal:
@@ -41,7 +41,9 @@ Host cecs
     User ubuntu
     Port [port]
 ```
-<img width="379" alt="image" src="https://user-images.githubusercontent.com/22287261/173214236-afab63a4-b14c-4e1f-a1a7-8948d417e0f8.png">
+
+**Note**: The following image is only a demo, you must replace replace Host, HostName, User and Port by yours.
+<img width="379" alt="image" src="https://github.com/longhoangphi225/VinUni-Server-CECS/blob/main/.github/images/22287261/173214236-afab63a4-b14c-4e1f-a1a7-8948d417e0f8.png">
 
 **Note**: PM me to get your own *port*.
 
@@ -49,6 +51,8 @@ Host cecs
 ```
 ssh cecs
 ```
+
+<img width="379" alt="image" src="https://github.com/longhoangphi225/VinUni-Server-CECS/blob/main/.github/images/Screen%20Shot%202022-12-15%20at%2015.54.24.png">
 
 # Your environment
 * Ubuntu 20.04
