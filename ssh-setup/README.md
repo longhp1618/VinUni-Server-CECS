@@ -2,7 +2,7 @@
 
 ## Create a new key pair
 * Open terminal on Linux/macOS or PowerShell on Windows, type:
-```
+```bash
 ssh-keygen -t ed25519
 ```
 * Then tap 'Enter' four times.
@@ -14,23 +14,23 @@ Expected result on Windows:
 
 ## Show your public key
 * On Linux/macOS, type on terminal:
-```
+```bash
 cat ~/.ssh/id_ed25519.pub
 ```
 
 * On Windows, type on PowerShell:
-```
+```bash
 cat $HOME/.ssh/id_ed25519.pub
 ```
 <img width="790" alt="image" src="https://github.com/longhoangphi225/VinUni-Server-CECS/blob/main/.github/images/173214118-26bde204-f48b-4cc4-8928-0f5ba25bcd7d.png">
 
 # Create config file
 * On Linux/macOS, open terminal:
-```
+```bash
 nano ~/.ssh/config
 ```
 * On Windows, open PowerShell:
-```
+```bash
 echo >> $HOME/.ssh/config
 ```
 
@@ -48,7 +48,7 @@ Host cecs
 **Note**: PM me to get your own *port*.
 
 # Connect
-```
+```bash
 ssh cecs
 ```
 
