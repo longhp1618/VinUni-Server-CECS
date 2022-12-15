@@ -52,7 +52,7 @@ Host cecs
 ssh cecs
 ```
 
-<img width="379" alt="image" src="https://github.com/longhoangphi225/VinUni-Server-CECS/blob/main/.github/images/Screen%20Shot%202022-12-15%20at%2015.54.24.png">
+<img width="500" alt="image" src="https://github.com/longhoangphi225/VinUni-Server-CECS/blob/main/.github/images/Screen%20Shot%202022-12-15%20at%2015.54.24.png">
 
 # Your environment
 * Ubuntu 20.04
