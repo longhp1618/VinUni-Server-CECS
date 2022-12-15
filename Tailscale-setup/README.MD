@@ -25,7 +25,10 @@ If can ssh to cecs server by this command line:
 ```
 ssh ubuntu@100.77.172.118 -p [your port]
 ```
+<img width="778" alt="image" src="https://github.com/longhoangphi225/VinUni-Server-CECS/blob/main/.github/images/Screen%20Shot%202022-12-15%20at%2015.55.32.png">
+
 or if you did [ssh-setup](https://github.com/longhoangphi225/VinUni-Server-CECS/tree/main/ssh-setup)
 ```
 ssh cecs
 ```
+<img width="778" alt="image" src="https://github.com/longhoangphi225/VinUni-Server-CECS/blob/main/.github/images/Screen%20Shot%202022-12-15%20at%2015.54.24.png">
