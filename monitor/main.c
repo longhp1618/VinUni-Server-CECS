@@ -165,7 +165,7 @@ int main(int argc, char* argv[]) {
         if (ffp) {  // check file existence
             if (fgets(cgroup, 1000, ffp) != NULL)
                 ;
-            char* s = strstr(cgroup, "docker-");
+            char* s = strstr(cgroup, "docker/");
             if (s) {
                 char cid[13] = "";
                 strncpy(cid, s + 7, 12);
