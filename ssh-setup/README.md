@@ -37,7 +37,7 @@ echo >> $HOME/.ssh/config
 Copy and paste this block
 ```
 Host cecs
-    HostName 100.77.172.118
+    HostName 100.88.197.50
     User ubuntu
     Port [port]
 ```
