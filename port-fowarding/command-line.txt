@@ -1,0 +1,9 @@
+sudo vi /etc/nftables.conf
+
+sudo systemctl restart nftables && systemctl status nftables && sudo nft list ruleset
+
+sudo nft monitor
+
+sudo vi /etc/sysctl.conf # change net.ipv4.ip_forward = 1
+
+sudo sysctl -p /etc/sysctl.conf
