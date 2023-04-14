@@ -23,7 +23,7 @@ tailscale up --auth-key tskey-auth-kNwSAV2CNTRL-Jv7zzMnYGugWSjfBkV1EygfL3Q2WTGLc
 ## ssh to server:
 If can ssh to cecs server by this command line:
 ```bash
-ssh ubuntu@100.77.172.118 -p [your port]
+ssh ubuntu@100.88.197.50 -p [your port]
 ```
 <img width="778" alt="image" src="https://github.com/longhoangphi225/VinUni-Server-CECS/blob/main/.github/images/Screen%20Shot%202022-12-15%20at%2015.55.32.png">
 
