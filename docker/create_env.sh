@@ -56,7 +56,7 @@ echo "[RES] => using port $port"
 # enter team code
 # read -p "Enter server (optional, VinUni-0, HUST-1, otherwise-all): " server
 # if [ "$server" = "0" ]; then
-s="0,1,2,3"
+s="0,1,2,3,4,5"
 # elif [ "$server" = "1" ]; then
 #     s="4,5,6,7"
 # else
@@ -64,9 +64,9 @@ s="0,1,2,3"
 # fi
 
 # copy and paste ssh public key
-mkdir -p ~/vinuni/user/$username # -p will ignore if existing
-mkdir -p ~/.ssh/user/$username
-if [ -f "/home/vinuni/.ssh/user/$username/authorized_keys" ]; then
+mkdir -p ~/vinuni/user_data/$username # -p will ignore if existing
+mkdir -p ~/vinuni/ssh_key/user/$username
+if [ -f "/home/cdc/vinuni/ssh_key/user/$username/authorized_keys" ]; then
     echo "[INFO] This username already has authorized keys!"
     read -p "Add a new public key and remove old one (y): " OptPubKey
 else
@@ -82,18 +82,18 @@ if [ $OptPubKey = "y" ]; then
         exit
     fi
     # write authorized keys to file
-    echo $pubkey >~/.ssh/user/$username/authorized_keys
-    chmod 644 ~/.ssh/user/$username/authorized_keys
+    echo $pubkey >~/vinuni/ssh_key/user/$username/authorized_keys
+    chmod 644 ~/vinuni/ssh_key/user/$username/authorized_keys
 fi
 
 # create a container
 docker run --init --restart=always --name $newname \
     --memory 230g --shm-size 64g \
     --cpuset-cpus="0-62" --gpus "\"device=$s\"" \
-    -v ~/vinuni/user/$username:/home/ubuntu/$username \
-    -v ~/vinuni/shared:/home/ubuntu/shared \
-    -v ~/vinuni/data:/home/ubuntu/data:ro \
+    -v ~/vinuni/user_data/$username:/home/ubuntu/$username \
+    -v ~/vinuni/data_shared/shared:/home/ubuntu/shared \
+    -v ~/vinuni/data_shared/protected:/home/ubuntu/data:ro \
     -p $port:22 -itd ubuntu_cecs:20.04
 
 # copy authorized keys inside container
-docker cp ~/.ssh/user/$username/authorized_keys $username:/home/ubuntu/.ssh/authorized_keys 
+docker cp ~/vinuni/ssh_key/user/$username/authorized_keys $username:/home/ubuntu/.ssh/authorized_keys 
