@@ -14,7 +14,7 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 ```bash
 # Run 2 lines:
 tailscale logout
-tailscale up --auth-key tskey-auth-kR8owKrpVh11CNTRL-iHocdyzqxQjkhMRdMrYJQjezvFYeiJgZ
+tailscale up --auth-key tskey-auth-kq4P3r5J8A11CNTRL-myEJ1YVP7R9DLTedDLcbQ9PhgdWdUaL2
 ```
 * Check the your status that whether you have added on the network or not. You should get the results like this.
 <img width="778" alt="image" src="https://github.com/longhoangphi225/VinUni-Server-CECS/blob/main/.github/images/Screen%20Shot%202022-12-15%20at%2016.20.22.png">
