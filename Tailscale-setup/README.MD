@@ -14,7 +14,7 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 ```bash
 # Run 2 lines:
 tailscale logout
-tailscale up --auth-key tskey-auth-kzgHwF6CNTRL-6ZSW9dwxC7iAn12BQaGm7igSVK87PpgtS
+tailscale up --auth-key tskey-auth-kAXLHin6ni11CNTRL-m5m1paFHsuGzfWxnbioUvGSfUGatYeEP
 ```
 * Check the your status that whether you have added on the network or not. You should get the results like this.
 <img width="778" alt="image" src="https://github.com/longhoangphi225/VinUni-Server-CECS/blob/main/.github/images/Screen%20Shot%202022-12-15%20at%2016.20.22.png">
@@ -23,7 +23,7 @@ tailscale up --auth-key tskey-auth-kzgHwF6CNTRL-6ZSW9dwxC7iAn12BQaGm7igSVK87Ppgt
 ## ssh to server:
 If can ssh to cecs server by this command line:
 ```bash
-ssh ubuntu@100.105.166.20 -p [your port] #The ip address may change. In that case, use the ip of the machine named "cecsjump-pro-e500-g6-ws720t"
+ssh ubuntu@100.118.215.10 -p [your port] #The ip address may change. In that case, use the ip of the machine named "cecsjump-pro-e500-g6-ws720t"
 ```
 <img width="778" alt="image" src="https://github.com/longhoangphi225/VinUni-Server-CECS/blob/main/.github/images/Screen%20Shot%202022-12-15%20at%2015.55.32.png">
 
