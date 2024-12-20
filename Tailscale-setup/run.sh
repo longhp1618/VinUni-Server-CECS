@@ -1,2 +1,2 @@
 tailscale logout
-tailscale up --auth-key tskey-auth-kNwSAV2CNTRL-Jv7zzMnYGugWSjfBkV1EygfL3Q2WTGLce
+tailscale up --auth-key tskey-auth-kPv5fYyMYD11CNTRL-zcpHkuGKqUFKj9qKYqdAUFjAXhoZehCP
